@@ -1,0 +1,91 @@
+/*A los iconos se les puede dar tama;o con la propiedad font-size*/
+/*buscar iconos en font-awesome icons*/
+
+:root {
+  --maintransition: all 1s ease;
+}
+
+.mainhome {
+  color: red;
+  margin-right: 20px;
+  font-size: 40px;
+  transition: var(--maintransition);
+}
+
+.mainhome:hover {
+  font-size: 50px;
+  color: green;
+}
+
+.facebook-icon {
+  font-size: 40px;
+  color: grey;
+  transition: var(--maintransition);
+}
+
+.facebook-icon:hover {
+  font-size: 50px;
+  color: blue;
+}
+
+/*Text shadow, el primer valor es sombra en eje x, el segundo en eje y y el ultimo es difuminado*/
+
+.text-shadow {
+  text-shadow: 5px 5px 2px red;
+}
+
+/*TEXT SHADOW GENERATOR buscar pag en internet para hacerlos de manera mas visual*/
+
+/*BOX SHADOW*/
+/*funciona de la misma manera que el text shadow*/
+
+.box {
+  width: 200px;
+  height: 200px;
+  background: red;
+  box-shadow: 10px 10px 5px green;
+  clear: both;
+}
+/*Para generarlos online buscar box shadow generator*/ /*Para aplicarla simplemente copiar el texto en el div que queremos*/
+.div2 {
+  width: 200px;
+  height: 200px;
+  background: red;
+  margin-top: 20px;
+  box-shadow: -47px 25px 28px 2px rgba(196, 48, 48, 0.72);
+  -webkit-box-shadow: -47px 25px 28px 2px rgba(196, 48, 48, 0.72);
+  -moz-box-shadow: -47px 25px 28px 2px rgba(196, 48, 48, 0.72);
+  display: inline-block;
+}
+
+/*experimentando*/
+
+.div3 {
+  width: 200px;
+  height: 200px;
+  background: white;
+  display: inline-block;
+  margin-left: 200px;
+  box-shadow: 10px 10px 10px purple;
+  transition: all 2s ease;
+}
+
+.div3:hover {
+  width: 220px;
+  height: 220px;
+  box-shadow: green;
+  border-radius: 20px;
+}
+
+.our-party {
+  font-family: verdana;
+  color: orange;
+  text-align: center;
+  margin: 20% auto;
+  font-size: 30px;
+}
+/*SEMANTIC TAGS
+simplemente para no tener que memorizar todo, poner en google semantic HTML tags y ver los graficos*/
+
+/*objetc FIT: cover, contain, fill, none, scale-down*/
+/*objet-fit: cover sirve para que la imagen ocupe todo el contenedor sin que se distorsione*/

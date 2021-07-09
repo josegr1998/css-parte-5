@@ -1,0 +1,62 @@
+/*CSS variables AKA custom properties
+hold a value and rehuse it
+--varName::value
+property:var(---VarName)
+scoope
+:root{} === global
+element === local
+any property*/
+/*control - f es un comando que sirve para buscar elementos*/
+
+:root {
+  --primary-color: blue;
+  --secondary-color: purple;
+  --main-transition: all 1s linear;
+  --main-spacing: 5px;
+  --main-fontsize: 16px;
+}
+
+h1 {
+  color: var(--secondary-color);
+  transition: var(--main-transition);
+}
+
+h2 {
+  color: var(--primary-color);
+}
+
+h3 {
+  color: var(--secondary-color);
+}
+
+p {
+  letter-spacing: var(--main-spacing);
+  transition: var(--main-transition);
+}
+
+h1:hover {
+  color: var(--primary-color);
+  font-size: var(--main-fontsize);
+}
+
+p:hover {
+  color: var(--secondary-color);
+  font-size: var(--main-fontsize);
+}
+
+/*Como se puede observar, se pueden almacenar variables para lo que sea y despues aplicarse como valores para las diferentes propiedades
+Las variables que almacene en el root se van a poder aplicar a todos los elementos del html. 
+Las variables que almacene en un elemento particular como un DIV, podran aplicarse SOLO en ese elemento y en los hijos de ese elemento. */
+
+div {
+  --maindivcolor: green;
+}
+
+.main-text {
+  color: var(--maindivcolor);
+  transition: var(--main-transition);
+}
+
+.main-text:hover {
+  color: yellow;
+}
